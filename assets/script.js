@@ -21,16 +21,26 @@ function renderScheduler() {
 
     let $textArea = $("<textarea>");
     $textArea.addClass("col-8");
+    // $textArea.attr("data-text", index);
     $timeBlockDiv.append($textArea);
 
     let $saveButton = $("<button>");
     $saveButton.addClass("col-2 btn saveBtn");
+    $saveButton.text("<3");
+    // $saveButton.attr("data-button", index);
     $timeBlockDiv.append($saveButton);
 
-    console.log("hora renderizada", moment(`"${$hourDiv.text()}"`, "h A").hour());
-    console.log("hora de ahora", today.hour());
-
     paintBlocks($hourDiv, $textArea);
+
+
+    let renderedHour = moment($hourDiv.text(), "h A").hour();
+    $textArea.val(localStorage.getItem(renderedHour));
+
+
+    $($saveButton).on('click', function () {
+
+        localStorage.setItem(renderedHour, $textArea.val());
+    })
 }
 
 function paintBlocks(hour, meeting) {
@@ -50,6 +60,7 @@ let WorkStart = moment("08:00", "hh:mm");
 for (let index = 0; index < 9; index++) {
     renderScheduler();
 }
+
 
 
 
