@@ -24,17 +24,31 @@ function renderScheduler() {
     $timeBlockDiv.append($textArea);
 
     let $saveButton = $("<button>");
-    $saveButton.addClass("col-2 saveBtn");
+    $saveButton.addClass("col-2 btn saveBtn");
     $timeBlockDiv.append($saveButton);
+
+    console.log("hora renderizada", moment(`"${$hourDiv.text()}"`, "h A").hour());
+    console.log("hora de ahora", today.hour());
+
+    paintBlocks($hourDiv, $textArea);
 }
 
+function paintBlocks(hour, meeting) {
+    let currentHour = today.hour();
+    let renderedHour = moment(hour.text(), "h A").hour();
+    if (currentHour === renderedHour) {
+        meeting.addClass("present");
+    } else if (currentHour > renderedHour) {
+        meeting.addClass("past");
+    } else {
+        meeting.addClass("future");
+    }
+}
 
 
 let WorkStart = moment("08:00", "hh:mm");
 for (let index = 0; index < 9; index++) {
     renderScheduler();
-
-
 }
 
 
