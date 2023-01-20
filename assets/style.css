@@ -21,6 +21,10 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+.jumbotron h1 {
+  font-weight: 800;
+}
+
 .description {
   white-space: pre-wrap;
 }
@@ -40,6 +44,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding-top: 30px;
 }
 
 .past {
