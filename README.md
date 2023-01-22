@@ -1,22 +1,8 @@
 # Third-Party APIs: Work Day Scheduler
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
-
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-## Acceptance Criteria
-
-The app should:
+This project is about creating a simple calendar application that allows a user to save events for each hour of the day. I was given initial HTML and CSS files, so I am working on the Javascript code. This app shall comply with the following requirements:
 
 * Display the current day at the top of the calender when a user opens the planner.
  
@@ -24,64 +10,29 @@ The app should:
  
 * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
  
-* Allow a user to enter an event when they click a timeblock
+* Allow a user to enter an event when they click a timeblock.
 
 * Save the event in local storage when the save button is clicked in that timeblock.
 
-* Persist events between refreshes of a page
+* Persist events between refreshes of a page.
+
+I am using the [Moment.js](https://momentjs.com/) library to work with date and time. Also this app is powered by [jQuery](https://jquery.com/) and [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/).
+
+Here is a link to the deployed application: https://github.com/mchinojo/7Work-Day-Scheduler
+
+## Usage
 
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](assets/05-third-party-apis-homework-demo.gif)
 
 
-## Grading Requirements
+## Credits
 
-This homework is graded based on the following criteria: 
+This project was made possible by my instructors and teacher assistants. Also I followed some documentation from jQuery, W3Schools, MDN Web Docs, Moment.js and Font Awesome:
 
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* https://jqueryui.com/
+* https://www.w3schools.com/
+* https://momentjs.com/docs/
+* https://fontawesome.com/docs
+* https://developer.mozilla.org/
